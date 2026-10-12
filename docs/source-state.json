@@ -1,0 +1,626 @@
+[
+  {
+    "path": "src/ament/ament_cmake",
+    "commit": "8289d61973f27e66930e0b656e67e12fa1d394cb",
+    "origin": "https://github.com/ament/ament_cmake.git",
+    "changes": []
+  },
+  {
+    "path": "src/ament/ament_index",
+    "commit": "ae673e815cae9413cfbf4cab6e91a9c1c73c84ef",
+    "origin": "https://github.com/ament/ament_index.git",
+    "changes": []
+  },
+  {
+    "path": "src/ament/ament_lint",
+    "commit": "a8b535a6d073233fc95b87c3ac4bcb1913a3b046",
+    "origin": "https://github.com/ament/ament_lint.git",
+    "changes": []
+  },
+  {
+    "path": "src/ament/ament_package",
+    "commit": "3c8a92b4dda05be83f6e8e879c70f219180e1384",
+    "origin": "https://github.com/ament/ament_package.git",
+    "changes": []
+  },
+  {
+    "path": "src/ament/google_benchmark_vendor",
+    "commit": "d75f3a8897a8846064e00c3ac3be46db1f98d51e",
+    "origin": "https://github.com/ament/google_benchmark_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ament/googletest",
+    "commit": "083afd688a0d14239a831e1734e66a15664389c1",
+    "origin": "https://github.com/ament/googletest.git",
+    "changes": []
+  },
+  {
+    "path": "src/ament/uncrustify_vendor",
+    "commit": "ec8f8b4d03483671e8ea2b3039f1015f92b0ef89",
+    "origin": "https://github.com/ament/uncrustify_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/eclipse-cyclonedds/cyclonedds",
+    "commit": "5041f3560c088c99e5088b2b8520b69169621196",
+    "origin": "https://github.com/eclipse-cyclonedds/cyclonedds.git",
+    "changes": []
+  },
+  {
+    "path": "src/eclipse-iceoryx/iceoryx",
+    "commit": "35311bfe5338392d65b18f148de70b803f6fc48e",
+    "origin": "https://github.com/eclipse-iceoryx/iceoryx.git",
+    "changes": []
+  },
+  {
+    "path": "src/eProsima/Fast-CDR",
+    "commit": "da2987299ee3104bb0393cf0afc8aad6fb848dc1",
+    "origin": "https://github.com/eProsima/Fast-CDR.git",
+    "changes": []
+  },
+  {
+    "path": "src/eProsima/Fast-DDS",
+    "commit": "0dfa6320b88ba530e5b22f71b5f76931b1517129",
+    "origin": "https://github.com/eProsima/Fast-DDS.git",
+    "changes": []
+  },
+  {
+    "path": "src/eProsima/foonathan_memory_vendor",
+    "commit": "347cb67581e51273a612780eb256a3c134c10bae",
+    "origin": "https://github.com/eProsima/foonathan_memory_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/gazebo-release/gz_cmake2_vendor",
+    "commit": "adcee1687a6f77bdc345702d7ce1f518e97a6a66",
+    "origin": "https://github.com/gazebo-release/gz_cmake2_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/gazebo-release/gz_math6_vendor",
+    "commit": "177e74c31767e60c5bd8167f9ec66017b8e8020b",
+    "origin": "https://github.com/gazebo-release/gz_math6_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/osrf/osrf_pycommon",
+    "commit": "7dc6da97b4765af5db43fa475ddee2c3e5999fbd",
+    "origin": "https://github.com/osrf/osrf_pycommon.git",
+    "changes": []
+  },
+  {
+    "path": "src/osrf/osrf_testing_tools_cpp",
+    "commit": "ccfe94a685884155cb619896df1e71b8507c5c70",
+    "origin": "https://github.com/osrf/osrf_testing_tools_cpp.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/class_loader",
+    "commit": "b59bce93380b73ac9061fba28e96bba540e2befe",
+    "origin": "https://github.com/ros/class_loader.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/kdl_parser",
+    "commit": "a4ad6b3c1dbf3730a579b250be81e4a74e838b94",
+    "origin": "https://github.com/ros/kdl_parser.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/pluginlib",
+    "commit": "a3679216f798c83d67244b3fd741d1418a3faafc",
+    "origin": "https://github.com/ros/pluginlib.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/resource_retriever",
+    "commit": "448f5c8b1dd474aa581e4aa49d6c4dd233a47b19",
+    "origin": "https://github.com/ros/resource_retriever.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/robot_state_publisher",
+    "commit": "8b5af4f31e0f754c7c262eb487ccd3956cb788cc",
+    "origin": "https://github.com/ros/robot_state_publisher.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/ros_environment",
+    "commit": "cf4d7c2b770fec588e8d35de09e12d5bfd056067",
+    "origin": "https://github.com/ros/ros_environment.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/ros_tutorials",
+    "commit": "23877fdd9ad9959e0b3147f75c0f66eb2783fe9c",
+    "origin": "https://github.com/ros/ros_tutorials.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/urdfdom",
+    "commit": "dbecca095cf81b755991b4d785f87a8e6b7358d6",
+    "origin": "https://github.com/ros/urdfdom.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros/urdfdom_headers",
+    "commit": "d3643d2acd8567c6522ceaf7ded6e3c3755a5244",
+    "origin": "https://github.com/ros/urdfdom_headers.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-perception/image_common",
+    "commit": "69b50c6db906b2044502b00c1b35dc97ec8a40ce",
+    "origin": "https://github.com/ros-perception/image_common.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-perception/laser_geometry",
+    "commit": "d53b925d25b4b5657261a44f4479365965cc2363",
+    "origin": "https://github.com/ros-perception/laser_geometry.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-planning/navigation_msgs",
+    "commit": "1d8683359734a2c829b5cdb6b5a4e015bbbcb6a5",
+    "origin": "https://github.com/ros-planning/navigation_msgs.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-tooling/keyboard_handler",
+    "commit": "a80cbfc93be6a545bb0892d1b5a408d2b5ef29b1",
+    "origin": "https://github.com/ros-tooling/keyboard_handler.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-tooling/libstatistics_collector",
+    "commit": "2f38291b9b36fea21467309d1ab83f022b65eaf7",
+    "origin": "https://github.com/ros-tooling/libstatistics_collector.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/interactive_markers",
+    "commit": "6f609b56b6f00bf967b22445c0941d64dac39157",
+    "origin": "https://github.com/ros-visualization/interactive_markers.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/python_qt_binding",
+    "commit": "3ef972ed8ddd495bb5ddbb0d7fc3e9cc6056d640",
+    "origin": "https://github.com/ros-visualization/python_qt_binding.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/qt_gui_core",
+    "commit": "06bd451bc421264816fbc18af0a41f1b2e3a5a8d",
+    "origin": "https://github.com/ros-visualization/qt_gui_core.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt",
+    "commit": "1bd6a3e20dee1df359941619514409c08e5eb6e5",
+    "origin": "https://github.com/ros-visualization/rqt.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_action",
+    "commit": "86e5c65a708b562f220cf6bafa7a3f10e075dad8",
+    "origin": "https://github.com/ros-visualization/rqt_action.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_bag",
+    "commit": "42202658f99aa747acb81421c389f3200e4621b1",
+    "origin": "https://github.com/ros-visualization/rqt_bag.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_console",
+    "commit": "b83342d6aa7a70a8cc873221b3dec9c15afc1559",
+    "origin": "https://github.com/ros-visualization/rqt_console.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_graph",
+    "commit": "943b0aca59761ef3184cf5c24dbf082d01e77b60",
+    "origin": "https://github.com/ros-visualization/rqt_graph.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_msg",
+    "commit": "ac945e03d95b83bde6b88638eb659785bcf030be",
+    "origin": "https://github.com/ros-visualization/rqt_msg.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_plot",
+    "commit": "ed6c9ce5077fe0ff507bf0cc3da6997ebe08e596",
+    "origin": "https://github.com/ros-visualization/rqt_plot.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_publisher",
+    "commit": "db902c8dd75527dbc0e9e533b42f650a56dbe03e",
+    "origin": "https://github.com/ros-visualization/rqt_publisher.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_py_console",
+    "commit": "36ad6e467f7add9279a4cd54d3e02ebcbd936d5b",
+    "origin": "https://github.com/ros-visualization/rqt_py_console.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_reconfigure",
+    "commit": "08e430abcfde08fe4833160a68e6541369977aa6",
+    "origin": "https://github.com/ros-visualization/rqt_reconfigure.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_service_caller",
+    "commit": "c9afeb84e9db4807c895e345294f2d521abf3859",
+    "origin": "https://github.com/ros-visualization/rqt_service_caller.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_shell",
+    "commit": "50639b2252fc0d02bcc3361284b67baa44a87c3b",
+    "origin": "https://github.com/ros-visualization/rqt_shell.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_srv",
+    "commit": "46e8e71560008857456525ad7977aa6bd87391d5",
+    "origin": "https://github.com/ros-visualization/rqt_srv.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/rqt_topic",
+    "commit": "2de045f1b47f273b7e5ad67cc3d555aef21d829b",
+    "origin": "https://github.com/ros-visualization/rqt_topic.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros-visualization/tango_icons_vendor",
+    "commit": "6829ad2201c6b42973edcfc9f5755b8b9f5b67ff",
+    "origin": "https://github.com/ros-visualization/tango_icons_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/ament_cmake_ros",
+    "commit": "8ca65783d089348f9138574fb1eff4e20026eea5",
+    "origin": "https://github.com/ros2/ament_cmake_ros.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/common_interfaces",
+    "commit": "08434490d3e4abd37ccc5462cdde69b88853b5b8",
+    "origin": "https://github.com/ros2/common_interfaces.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/console_bridge_vendor",
+    "commit": "d445245912786a7a03216e9d47f102e1997320f2",
+    "origin": "https://github.com/ros2/console_bridge_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/demos",
+    "commit": "1fc7a62ee591e4c4a7f84e72aa4b33de11f6fbf3",
+    "origin": "https://github.com/ros2/demos.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/eigen3_cmake_module",
+    "commit": "526c6c745da360fe78fb727aa8a1f6daa8199abd",
+    "origin": "https://github.com/ros2/eigen3_cmake_module.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/example_interfaces",
+    "commit": "f8deb566a1facf91bd38b9f00c4cf684c5007d85",
+    "origin": "https://github.com/ros2/example_interfaces.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/examples",
+    "commit": "09899ca6b6361f2cca6d4f626c0304c86e7b9ada",
+    "origin": "https://github.com/ros2/examples.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/geometry2",
+    "commit": "404b7224d623d614f18fa9738dbf1716403d857e",
+    "origin": "https://github.com/ros2/geometry2.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/launch",
+    "commit": "02900477fa6f4e21ffdf6a84618cda4e3cde5237",
+    "origin": "https://github.com/ros2/launch.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/launch_ros",
+    "commit": "74064df445744dc96d08debf4b90d445e07385f5",
+    "origin": "https://github.com/ros2/launch_ros.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/libyaml_vendor",
+    "commit": "239f695ceaa0820255f3d0fe02ec8c2bd41b8e78",
+    "origin": "https://github.com/ros2/libyaml_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/message_filters",
+    "commit": "14ffd199d23cdfcd7ed102de8328081a5ec8f5e6",
+    "origin": "https://github.com/ros2/message_filters.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/mimick_vendor",
+    "commit": "39ec45b347721c8c90c0e31450e91c00fb0ec856",
+    "origin": "https://github.com/ros2/mimick_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/orocos_kdl_vendor",
+    "commit": "d390ba45a77d8d49746a784d10a88cb77e86f703",
+    "origin": "https://github.com/ros2/orocos_kdl_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/performance_test_fixture",
+    "commit": "12f974e2f58b5ec8e8af3476742c36ba78a801c4",
+    "origin": "https://github.com/ros2/performance_test_fixture.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/pybind11_vendor",
+    "commit": "06dff083cdef3381c1d1d16159ac19227f646ad9",
+    "origin": "https://github.com/ros2/pybind11_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/python_cmake_module",
+    "commit": "859115408416e77d37711912d5c36cd3147fe136",
+    "origin": "https://github.com/ros2/python_cmake_module.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rcl",
+    "commit": "cbaee7c905e3276bb7a629eb1e18d8d3c781f194",
+    "origin": "https://github.com/ros2/rcl.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rcl_interfaces",
+    "commit": "82776fc9068d1e0cd4af11c2e2700195994b2eb1",
+    "origin": "https://github.com/ros2/rcl_interfaces.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rcl_logging",
+    "commit": "5bab8cf7a19c466de77aee35fa55778298563c57",
+    "origin": "https://github.com/ros2/rcl_logging.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rclcpp",
+    "commit": "8c09a31671534249faef346b629dea4e64bd570c",
+    "origin": "https://github.com/ros2/rclcpp.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rclpy",
+    "commit": "eb711390d1fd8d76f6fc700d137fd370c4cdf625",
+    "origin": "https://github.com/ros2/rclpy.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rcpputils",
+    "commit": "ddb3f310870e1cd5395396ca36101075420ba8ba",
+    "origin": "https://github.com/ros2/rcpputils.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rcutils",
+    "commit": "ab10bfa802e5e26c04aab8a7cf004996268f0497",
+    "origin": "https://github.com/ros2/rcutils.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/realtime_support",
+    "commit": "0e3faef4b7aa7985726dba97c761a6783f62a958",
+    "origin": "https://github.com/ros2/realtime_support.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rmw",
+    "commit": "566d17a97e87bc5336ce33fb025ce8e952a3326a",
+    "origin": "https://github.com/ros2/rmw.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rmw_connextdds",
+    "commit": "b9d6855d693564bcb6c9f4f9bee545834dc2f905",
+    "origin": "https://github.com/ros2/rmw_connextdds.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rmw_cyclonedds",
+    "commit": "e370e09ca76fc811e42ff07bd3a5e3b92f18c51e",
+    "origin": "https://github.com/ros2/rmw_cyclonedds.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rmw_dds_common",
+    "commit": "e26ba1079886c5598614172db0b27526aa6af07d",
+    "origin": "https://github.com/ros2/rmw_dds_common.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rmw_fastrtps",
+    "commit": "da0c2d3120e9b5ea85cca251ea1f48ca8d0a93d7",
+    "origin": "https://github.com/ros2/rmw_fastrtps.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rmw_implementation",
+    "commit": "0fd2967b217afef2d45fbab550b598c70444a0aa",
+    "origin": "https://github.com/ros2/rmw_implementation.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/ros_testing",
+    "commit": "d258cbca54a5e6fbbf7be38ddd78592273ccee78",
+    "origin": "https://github.com/ros2/ros_testing.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/ros2_tracing",
+    "commit": "3c159b382d2d565e26eaa91e39c9ec06a5c6fe88",
+    "origin": "https://github.com/ros2/ros2_tracing.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/ros2cli",
+    "commit": "1e9f841df8d3fd10f3987ab0b4319cd3a94f6c52",
+    "origin": "https://github.com/ros2/ros2cli.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/ros2cli_common_extensions",
+    "commit": "558776dd146bfa9651b2f273d8e18c8771c3246f",
+    "origin": "https://github.com/ros2/ros2cli_common_extensions.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosbag2",
+    "commit": "bc63926c2e06efa480a957549be88b614fa96c82",
+    "origin": "https://github.com/ros2/rosbag2.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosidl",
+    "commit": "5621b26eff54596a356ad8abd72c06e7650d21f7",
+    "origin": "https://github.com/ros2/rosidl.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosidl_dds",
+    "commit": "ab8497770c652edb40d6b1591118198cbcf14237",
+    "origin": "https://github.com/ros2/rosidl_dds.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosidl_defaults",
+    "commit": "8266f1c0f062d405595570209cfb0ed3f71684ae",
+    "origin": "https://github.com/ros2/rosidl_defaults.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosidl_python",
+    "commit": "3971c5f59606fa33097f0ad9c36b6438dbb0b523",
+    "origin": "https://github.com/ros2/rosidl_python.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosidl_runtime_py",
+    "commit": "02b91d6f9acbfe3dbfa4feb34bd7c30e219aa178",
+    "origin": "https://github.com/ros2/rosidl_runtime_py.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosidl_typesupport",
+    "commit": "94c7b6d6db353cf26adc22cb7023833fd6cd18a1",
+    "origin": "https://github.com/ros2/rosidl_typesupport.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rosidl_typesupport_fastrtps",
+    "commit": "f04626533f5dec25d79eb334097881ba6fc3181b",
+    "origin": "https://github.com/ros2/rosidl_typesupport_fastrtps.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rpyutils",
+    "commit": "92838f74ba55f37ac8589e51945a23a1cc185eec",
+    "origin": "https://github.com/ros2/rpyutils.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/rviz",
+    "commit": "4e2b27b7561da7eb03fbc7e92a74d4b3f1e0b054",
+    "origin": "https://github.com/ros2/rviz.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/spdlog_vendor",
+    "commit": "2de3e7f6ee157a7e3a2dd24f33046f6d25c099be",
+    "origin": "https://github.com/ros2/spdlog_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/sros2",
+    "commit": "7c8f9869f4ae0b5db644dd6a05c2c0da007cc091",
+    "origin": "https://github.com/ros2/sros2.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/system_tests",
+    "commit": "36137c53e6e49edf39311513f9d1e53f7edc36dc",
+    "origin": "https://github.com/ros2/system_tests.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/test_interface_files",
+    "commit": "a0c8f5e338490ddf8b98238dce35c06810115e8b",
+    "origin": "https://github.com/ros2/test_interface_files.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/tinyxml_vendor",
+    "commit": "b226bdf9a7dbdcf9ac47961e09f3d730525c1667",
+    "origin": "https://github.com/ros2/tinyxml_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/tinyxml2_vendor",
+    "commit": "aa68d6cd1c4e2d8203d119b2d2489deb2e8b45f6",
+    "origin": "https://github.com/ros2/tinyxml2_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/tlsf",
+    "commit": "d39351de61894a8b4ce65a682ea3593628a9a179",
+    "origin": "https://github.com/ros2/tlsf.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/unique_identifier_msgs",
+    "commit": "27767cefcf8a80da44641dc208c57722c28aa11c",
+    "origin": "https://github.com/ros2/unique_identifier_msgs.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/urdf",
+    "commit": "29e67043267a8b8fe90a9ab08251cb0bd52bb9c6",
+    "origin": "https://github.com/ros2/urdf.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2/yaml_cpp_vendor",
+    "commit": "77bebe7a90c0bc26df3137f15bad4a9712f9b74e",
+    "origin": "https://github.com/ros2/yaml_cpp_vendor.git",
+    "changes": []
+  },
+  {
+    "path": "src/ros2-rust/rosidl_rust",
+    "commit": "19d57818dab3b51e418c0893b70b3a1a8b64c495",
+    "origin": "https://github.com/ros2-rust/rosidl_rust.git",
+    "changes": []
+  }
+]

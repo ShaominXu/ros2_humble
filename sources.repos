@@ -1,0 +1,524 @@
+{
+  "repositories": {
+    "ament/ament_cmake": {
+      "type": "git",
+      "url": "https://github.com/ament/ament_cmake.git",
+      "version": "8289d61973f27e66930e0b656e67e12fa1d394cb"
+    },
+    "ament/ament_index": {
+      "type": "git",
+      "url": "https://github.com/ament/ament_index.git",
+      "version": "ae673e815cae9413cfbf4cab6e91a9c1c73c84ef"
+    },
+    "ament/ament_lint": {
+      "type": "git",
+      "url": "https://github.com/ament/ament_lint.git",
+      "version": "a8b535a6d073233fc95b87c3ac4bcb1913a3b046"
+    },
+    "ament/ament_package": {
+      "type": "git",
+      "url": "https://github.com/ament/ament_package.git",
+      "version": "3c8a92b4dda05be83f6e8e879c70f219180e1384"
+    },
+    "ament/google_benchmark_vendor": {
+      "type": "git",
+      "url": "https://github.com/ament/google_benchmark_vendor.git",
+      "version": "d75f3a8897a8846064e00c3ac3be46db1f98d51e"
+    },
+    "ament/googletest": {
+      "type": "git",
+      "url": "https://github.com/ament/googletest.git",
+      "version": "083afd688a0d14239a831e1734e66a15664389c1"
+    },
+    "ament/uncrustify_vendor": {
+      "type": "git",
+      "url": "https://github.com/ament/uncrustify_vendor.git",
+      "version": "ec8f8b4d03483671e8ea2b3039f1015f92b0ef89"
+    },
+    "eclipse-cyclonedds/cyclonedds": {
+      "type": "git",
+      "url": "https://github.com/eclipse-cyclonedds/cyclonedds.git",
+      "version": "5041f3560c088c99e5088b2b8520b69169621196"
+    },
+    "eclipse-iceoryx/iceoryx": {
+      "type": "git",
+      "url": "https://github.com/eclipse-iceoryx/iceoryx.git",
+      "version": "35311bfe5338392d65b18f148de70b803f6fc48e"
+    },
+    "eProsima/Fast-CDR": {
+      "type": "git",
+      "url": "https://github.com/eProsima/Fast-CDR.git",
+      "version": "da2987299ee3104bb0393cf0afc8aad6fb848dc1"
+    },
+    "eProsima/Fast-DDS": {
+      "type": "git",
+      "url": "https://github.com/eProsima/Fast-DDS.git",
+      "version": "0dfa6320b88ba530e5b22f71b5f76931b1517129"
+    },
+    "eProsima/foonathan_memory_vendor": {
+      "type": "git",
+      "url": "https://github.com/eProsima/foonathan_memory_vendor.git",
+      "version": "347cb67581e51273a612780eb256a3c134c10bae"
+    },
+    "gazebo-release/gz_cmake2_vendor": {
+      "type": "git",
+      "url": "https://github.com/gazebo-release/gz_cmake2_vendor.git",
+      "version": "adcee1687a6f77bdc345702d7ce1f518e97a6a66"
+    },
+    "gazebo-release/gz_math6_vendor": {
+      "type": "git",
+      "url": "https://github.com/gazebo-release/gz_math6_vendor.git",
+      "version": "177e74c31767e60c5bd8167f9ec66017b8e8020b"
+    },
+    "osrf/osrf_pycommon": {
+      "type": "git",
+      "url": "https://github.com/osrf/osrf_pycommon.git",
+      "version": "7dc6da97b4765af5db43fa475ddee2c3e5999fbd"
+    },
+    "osrf/osrf_testing_tools_cpp": {
+      "type": "git",
+      "url": "https://github.com/osrf/osrf_testing_tools_cpp.git",
+      "version": "ccfe94a685884155cb619896df1e71b8507c5c70"
+    },
+    "ros/class_loader": {
+      "type": "git",
+      "url": "https://github.com/ros/class_loader.git",
+      "version": "b59bce93380b73ac9061fba28e96bba540e2befe"
+    },
+    "ros/kdl_parser": {
+      "type": "git",
+      "url": "https://github.com/ros/kdl_parser.git",
+      "version": "a4ad6b3c1dbf3730a579b250be81e4a74e838b94"
+    },
+    "ros/pluginlib": {
+      "type": "git",
+      "url": "https://github.com/ros/pluginlib.git",
+      "version": "a3679216f798c83d67244b3fd741d1418a3faafc"
+    },
+    "ros/resource_retriever": {
+      "type": "git",
+      "url": "https://github.com/ros/resource_retriever.git",
+      "version": "448f5c8b1dd474aa581e4aa49d6c4dd233a47b19"
+    },
+    "ros/robot_state_publisher": {
+      "type": "git",
+      "url": "https://github.com/ros/robot_state_publisher.git",
+      "version": "8b5af4f31e0f754c7c262eb487ccd3956cb788cc"
+    },
+    "ros/ros_environment": {
+      "type": "git",
+      "url": "https://github.com/ros/ros_environment.git",
+      "version": "cf4d7c2b770fec588e8d35de09e12d5bfd056067"
+    },
+    "ros/ros_tutorials": {
+      "type": "git",
+      "url": "https://github.com/ros/ros_tutorials.git",
+      "version": "23877fdd9ad9959e0b3147f75c0f66eb2783fe9c"
+    },
+    "ros/urdfdom": {
+      "type": "git",
+      "url": "https://github.com/ros/urdfdom.git",
+      "version": "dbecca095cf81b755991b4d785f87a8e6b7358d6"
+    },
+    "ros/urdfdom_headers": {
+      "type": "git",
+      "url": "https://github.com/ros/urdfdom_headers.git",
+      "version": "d3643d2acd8567c6522ceaf7ded6e3c3755a5244"
+    },
+    "ros-perception/image_common": {
+      "type": "git",
+      "url": "https://github.com/ros-perception/image_common.git",
+      "version": "69b50c6db906b2044502b00c1b35dc97ec8a40ce"
+    },
+    "ros-perception/laser_geometry": {
+      "type": "git",
+      "url": "https://github.com/ros-perception/laser_geometry.git",
+      "version": "d53b925d25b4b5657261a44f4479365965cc2363"
+    },
+    "ros-planning/navigation_msgs": {
+      "type": "git",
+      "url": "https://github.com/ros-planning/navigation_msgs.git",
+      "version": "1d8683359734a2c829b5cdb6b5a4e015bbbcb6a5"
+    },
+    "ros-tooling/keyboard_handler": {
+      "type": "git",
+      "url": "https://github.com/ros-tooling/keyboard_handler.git",
+      "version": "a80cbfc93be6a545bb0892d1b5a408d2b5ef29b1"
+    },
+    "ros-tooling/libstatistics_collector": {
+      "type": "git",
+      "url": "https://github.com/ros-tooling/libstatistics_collector.git",
+      "version": "2f38291b9b36fea21467309d1ab83f022b65eaf7"
+    },
+    "ros-visualization/interactive_markers": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/interactive_markers.git",
+      "version": "6f609b56b6f00bf967b22445c0941d64dac39157"
+    },
+    "ros-visualization/python_qt_binding": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/python_qt_binding.git",
+      "version": "3ef972ed8ddd495bb5ddbb0d7fc3e9cc6056d640"
+    },
+    "ros-visualization/qt_gui_core": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/qt_gui_core.git",
+      "version": "06bd451bc421264816fbc18af0a41f1b2e3a5a8d"
+    },
+    "ros-visualization/rqt": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt.git",
+      "version": "1bd6a3e20dee1df359941619514409c08e5eb6e5"
+    },
+    "ros-visualization/rqt_action": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_action.git",
+      "version": "86e5c65a708b562f220cf6bafa7a3f10e075dad8"
+    },
+    "ros-visualization/rqt_bag": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_bag.git",
+      "version": "42202658f99aa747acb81421c389f3200e4621b1"
+    },
+    "ros-visualization/rqt_console": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_console.git",
+      "version": "b83342d6aa7a70a8cc873221b3dec9c15afc1559"
+    },
+    "ros-visualization/rqt_graph": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_graph.git",
+      "version": "943b0aca59761ef3184cf5c24dbf082d01e77b60"
+    },
+    "ros-visualization/rqt_msg": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_msg.git",
+      "version": "ac945e03d95b83bde6b88638eb659785bcf030be"
+    },
+    "ros-visualization/rqt_plot": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_plot.git",
+      "version": "ed6c9ce5077fe0ff507bf0cc3da6997ebe08e596"
+    },
+    "ros-visualization/rqt_publisher": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_publisher.git",
+      "version": "db902c8dd75527dbc0e9e533b42f650a56dbe03e"
+    },
+    "ros-visualization/rqt_py_console": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_py_console.git",
+      "version": "36ad6e467f7add9279a4cd54d3e02ebcbd936d5b"
+    },
+    "ros-visualization/rqt_reconfigure": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_reconfigure.git",
+      "version": "08e430abcfde08fe4833160a68e6541369977aa6"
+    },
+    "ros-visualization/rqt_service_caller": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_service_caller.git",
+      "version": "c9afeb84e9db4807c895e345294f2d521abf3859"
+    },
+    "ros-visualization/rqt_shell": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_shell.git",
+      "version": "50639b2252fc0d02bcc3361284b67baa44a87c3b"
+    },
+    "ros-visualization/rqt_srv": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_srv.git",
+      "version": "46e8e71560008857456525ad7977aa6bd87391d5"
+    },
+    "ros-visualization/rqt_topic": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/rqt_topic.git",
+      "version": "2de045f1b47f273b7e5ad67cc3d555aef21d829b"
+    },
+    "ros-visualization/tango_icons_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros-visualization/tango_icons_vendor.git",
+      "version": "6829ad2201c6b42973edcfc9f5755b8b9f5b67ff"
+    },
+    "ros2/ament_cmake_ros": {
+      "type": "git",
+      "url": "https://github.com/ros2/ament_cmake_ros.git",
+      "version": "8ca65783d089348f9138574fb1eff4e20026eea5"
+    },
+    "ros2/common_interfaces": {
+      "type": "git",
+      "url": "https://github.com/ros2/common_interfaces.git",
+      "version": "08434490d3e4abd37ccc5462cdde69b88853b5b8"
+    },
+    "ros2/console_bridge_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/console_bridge_vendor.git",
+      "version": "d445245912786a7a03216e9d47f102e1997320f2"
+    },
+    "ros2/demos": {
+      "type": "git",
+      "url": "https://github.com/ros2/demos.git",
+      "version": "1fc7a62ee591e4c4a7f84e72aa4b33de11f6fbf3"
+    },
+    "ros2/eigen3_cmake_module": {
+      "type": "git",
+      "url": "https://github.com/ros2/eigen3_cmake_module.git",
+      "version": "526c6c745da360fe78fb727aa8a1f6daa8199abd"
+    },
+    "ros2/example_interfaces": {
+      "type": "git",
+      "url": "https://github.com/ros2/example_interfaces.git",
+      "version": "f8deb566a1facf91bd38b9f00c4cf684c5007d85"
+    },
+    "ros2/examples": {
+      "type": "git",
+      "url": "https://github.com/ros2/examples.git",
+      "version": "09899ca6b6361f2cca6d4f626c0304c86e7b9ada"
+    },
+    "ros2/geometry2": {
+      "type": "git",
+      "url": "https://github.com/ros2/geometry2.git",
+      "version": "404b7224d623d614f18fa9738dbf1716403d857e"
+    },
+    "ros2/launch": {
+      "type": "git",
+      "url": "https://github.com/ros2/launch.git",
+      "version": "02900477fa6f4e21ffdf6a84618cda4e3cde5237"
+    },
+    "ros2/launch_ros": {
+      "type": "git",
+      "url": "https://github.com/ros2/launch_ros.git",
+      "version": "74064df445744dc96d08debf4b90d445e07385f5"
+    },
+    "ros2/libyaml_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/libyaml_vendor.git",
+      "version": "239f695ceaa0820255f3d0fe02ec8c2bd41b8e78"
+    },
+    "ros2/message_filters": {
+      "type": "git",
+      "url": "https://github.com/ros2/message_filters.git",
+      "version": "14ffd199d23cdfcd7ed102de8328081a5ec8f5e6"
+    },
+    "ros2/mimick_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/mimick_vendor.git",
+      "version": "39ec45b347721c8c90c0e31450e91c00fb0ec856"
+    },
+    "ros2/orocos_kdl_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/orocos_kdl_vendor.git",
+      "version": "d390ba45a77d8d49746a784d10a88cb77e86f703"
+    },
+    "ros2/performance_test_fixture": {
+      "type": "git",
+      "url": "https://github.com/ros2/performance_test_fixture.git",
+      "version": "12f974e2f58b5ec8e8af3476742c36ba78a801c4"
+    },
+    "ros2/pybind11_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/pybind11_vendor.git",
+      "version": "06dff083cdef3381c1d1d16159ac19227f646ad9"
+    },
+    "ros2/python_cmake_module": {
+      "type": "git",
+      "url": "https://github.com/ros2/python_cmake_module.git",
+      "version": "859115408416e77d37711912d5c36cd3147fe136"
+    },
+    "ros2/rcl": {
+      "type": "git",
+      "url": "https://github.com/ros2/rcl.git",
+      "version": "cbaee7c905e3276bb7a629eb1e18d8d3c781f194"
+    },
+    "ros2/rcl_interfaces": {
+      "type": "git",
+      "url": "https://github.com/ros2/rcl_interfaces.git",
+      "version": "82776fc9068d1e0cd4af11c2e2700195994b2eb1"
+    },
+    "ros2/rcl_logging": {
+      "type": "git",
+      "url": "https://github.com/ros2/rcl_logging.git",
+      "version": "5bab8cf7a19c466de77aee35fa55778298563c57"
+    },
+    "ros2/rclcpp": {
+      "type": "git",
+      "url": "https://github.com/ros2/rclcpp.git",
+      "version": "8c09a31671534249faef346b629dea4e64bd570c"
+    },
+    "ros2/rclpy": {
+      "type": "git",
+      "url": "https://github.com/ros2/rclpy.git",
+      "version": "eb711390d1fd8d76f6fc700d137fd370c4cdf625"
+    },
+    "ros2/rcpputils": {
+      "type": "git",
+      "url": "https://github.com/ros2/rcpputils.git",
+      "version": "ddb3f310870e1cd5395396ca36101075420ba8ba"
+    },
+    "ros2/rcutils": {
+      "type": "git",
+      "url": "https://github.com/ros2/rcutils.git",
+      "version": "ab10bfa802e5e26c04aab8a7cf004996268f0497"
+    },
+    "ros2/realtime_support": {
+      "type": "git",
+      "url": "https://github.com/ros2/realtime_support.git",
+      "version": "0e3faef4b7aa7985726dba97c761a6783f62a958"
+    },
+    "ros2/rmw": {
+      "type": "git",
+      "url": "https://github.com/ros2/rmw.git",
+      "version": "566d17a97e87bc5336ce33fb025ce8e952a3326a"
+    },
+    "ros2/rmw_connextdds": {
+      "type": "git",
+      "url": "https://github.com/ros2/rmw_connextdds.git",
+      "version": "b9d6855d693564bcb6c9f4f9bee545834dc2f905"
+    },
+    "ros2/rmw_cyclonedds": {
+      "type": "git",
+      "url": "https://github.com/ros2/rmw_cyclonedds.git",
+      "version": "e370e09ca76fc811e42ff07bd3a5e3b92f18c51e"
+    },
+    "ros2/rmw_dds_common": {
+      "type": "git",
+      "url": "https://github.com/ros2/rmw_dds_common.git",
+      "version": "e26ba1079886c5598614172db0b27526aa6af07d"
+    },
+    "ros2/rmw_fastrtps": {
+      "type": "git",
+      "url": "https://github.com/ros2/rmw_fastrtps.git",
+      "version": "da0c2d3120e9b5ea85cca251ea1f48ca8d0a93d7"
+    },
+    "ros2/rmw_implementation": {
+      "type": "git",
+      "url": "https://github.com/ros2/rmw_implementation.git",
+      "version": "0fd2967b217afef2d45fbab550b598c70444a0aa"
+    },
+    "ros2/ros_testing": {
+      "type": "git",
+      "url": "https://github.com/ros2/ros_testing.git",
+      "version": "d258cbca54a5e6fbbf7be38ddd78592273ccee78"
+    },
+    "ros2/ros2_tracing": {
+      "type": "git",
+      "url": "https://github.com/ros2/ros2_tracing.git",
+      "version": "3c159b382d2d565e26eaa91e39c9ec06a5c6fe88"
+    },
+    "ros2/ros2cli": {
+      "type": "git",
+      "url": "https://github.com/ros2/ros2cli.git",
+      "version": "1e9f841df8d3fd10f3987ab0b4319cd3a94f6c52"
+    },
+    "ros2/ros2cli_common_extensions": {
+      "type": "git",
+      "url": "https://github.com/ros2/ros2cli_common_extensions.git",
+      "version": "558776dd146bfa9651b2f273d8e18c8771c3246f"
+    },
+    "ros2/rosbag2": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosbag2.git",
+      "version": "bc63926c2e06efa480a957549be88b614fa96c82"
+    },
+    "ros2/rosidl": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosidl.git",
+      "version": "5621b26eff54596a356ad8abd72c06e7650d21f7"
+    },
+    "ros2/rosidl_dds": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosidl_dds.git",
+      "version": "ab8497770c652edb40d6b1591118198cbcf14237"
+    },
+    "ros2/rosidl_defaults": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosidl_defaults.git",
+      "version": "8266f1c0f062d405595570209cfb0ed3f71684ae"
+    },
+    "ros2/rosidl_python": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosidl_python.git",
+      "version": "3971c5f59606fa33097f0ad9c36b6438dbb0b523"
+    },
+    "ros2/rosidl_runtime_py": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosidl_runtime_py.git",
+      "version": "02b91d6f9acbfe3dbfa4feb34bd7c30e219aa178"
+    },
+    "ros2/rosidl_typesupport": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosidl_typesupport.git",
+      "version": "94c7b6d6db353cf26adc22cb7023833fd6cd18a1"
+    },
+    "ros2/rosidl_typesupport_fastrtps": {
+      "type": "git",
+      "url": "https://github.com/ros2/rosidl_typesupport_fastrtps.git",
+      "version": "f04626533f5dec25d79eb334097881ba6fc3181b"
+    },
+    "ros2/rpyutils": {
+      "type": "git",
+      "url": "https://github.com/ros2/rpyutils.git",
+      "version": "92838f74ba55f37ac8589e51945a23a1cc185eec"
+    },
+    "ros2/rviz": {
+      "type": "git",
+      "url": "https://github.com/ros2/rviz.git",
+      "version": "4e2b27b7561da7eb03fbc7e92a74d4b3f1e0b054"
+    },
+    "ros2/spdlog_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/spdlog_vendor.git",
+      "version": "2de3e7f6ee157a7e3a2dd24f33046f6d25c099be"
+    },
+    "ros2/sros2": {
+      "type": "git",
+      "url": "https://github.com/ros2/sros2.git",
+      "version": "7c8f9869f4ae0b5db644dd6a05c2c0da007cc091"
+    },
+    "ros2/system_tests": {
+      "type": "git",
+      "url": "https://github.com/ros2/system_tests.git",
+      "version": "36137c53e6e49edf39311513f9d1e53f7edc36dc"
+    },
+    "ros2/test_interface_files": {
+      "type": "git",
+      "url": "https://github.com/ros2/test_interface_files.git",
+      "version": "a0c8f5e338490ddf8b98238dce35c06810115e8b"
+    },
+    "ros2/tinyxml_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/tinyxml_vendor.git",
+      "version": "b226bdf9a7dbdcf9ac47961e09f3d730525c1667"
+    },
+    "ros2/tinyxml2_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/tinyxml2_vendor.git",
+      "version": "aa68d6cd1c4e2d8203d119b2d2489deb2e8b45f6"
+    },
+    "ros2/tlsf": {
+      "type": "git",
+      "url": "https://github.com/ros2/tlsf.git",
+      "version": "d39351de61894a8b4ce65a682ea3593628a9a179"
+    },
+    "ros2/unique_identifier_msgs": {
+      "type": "git",
+      "url": "https://github.com/ros2/unique_identifier_msgs.git",
+      "version": "27767cefcf8a80da44641dc208c57722c28aa11c"
+    },
+    "ros2/urdf": {
+      "type": "git",
+      "url": "https://github.com/ros2/urdf.git",
+      "version": "29e67043267a8b8fe90a9ab08251cb0bd52bb9c6"
+    },
+    "ros2/yaml_cpp_vendor": {
+      "type": "git",
+      "url": "https://github.com/ros2/yaml_cpp_vendor.git",
+      "version": "77bebe7a90c0bc26df3137f15bad4a9712f9b74e"
+    },
+    "ros2-rust/rosidl_rust": {
+      "type": "git",
+      "url": "https://github.com/ros2-rust/rosidl_rust.git",
+      "version": "19d57818dab3b51e418c0893b70b3a1a8b64c495"
+    }
+  }
+}
