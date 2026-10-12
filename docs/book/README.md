@@ -46,5 +46,6 @@
 - 已有工作区概览：[`project-overview.md`](../project-overview.md)。
 - 已建立成书路线、目录草案和章节模板。
 - 已完成[第 2 章试写稿：从 talker/listener 追踪一条消息](chapter-02-message-journey.md)，关键调用已按本地源码核验，实验待运行。
+- 已完成[第 3 章试写稿：ROS 2 分层与资源生命周期](chapter-03-layers-and-lifetime.md)，解释创建链、类型支持、共享持有关系与关闭过程，实验待运行。
 - 尚未验证构建环境。
 - 下一步：根据试写稿反馈调整深度和行文，补充实验记录，再推进执行器章节。
