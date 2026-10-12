@@ -12,6 +12,10 @@
 
 当前章节已按本地源码核验关键调用，构建与实验尚未验证。
 
+## 安装环境
+
+请参考 [ROS 2 Humble 官方安装指南](https://docs.ros.org/en/humble/Installation.html)，选择适合操作系统的安装方式。
+
 ## 源码基线与恢复
 
 本仓库保存书稿和源码版本清单。`src/` 为本地阅读目录，不提交到本仓库。[sources.repos](sources.repos) 固定了写作基线中的 104 个上游仓库及其提交号；[源码状态记录](docs/source-state.json) 保存清单采集时的状态，当时所有仓库均无本地修改。
