@@ -16,9 +16,9 @@
 
 请参考 [ROS 2 Humble 官方安装指南](https://docs.ros.org/en/humble/Installation.html)，选择适合操作系统的安装方式。
 
-## 源码基线与恢复
+## 本书对应的源码版本
 
-本仓库保存书稿和源码版本清单。`src/` 为本地阅读目录，不提交到本仓库。[sources.repos](sources.repos) 固定了写作基线中的 104 个上游仓库及其提交号；[源码状态记录](docs/source-state.json) 保存清单采集时的状态，当时所有仓库均无本地修改。
+安装与构建请参考上面的官方指南。若需对照本书阅读源码，请使用 [sources.repos](sources.repos) 获取对应版本：清单固定了 104 个上游仓库的具体提交，避免上游更新后代码与书中分析不一致。`src/` 为本地阅读目录，不提交到本仓库。
 
 在安装 Git 和 vcstool 后，从仓库根目录执行：
 
@@ -34,9 +34,7 @@ New-Item -ItemType Directory -Force src
 Get-Content -Raw sources.repos | vcs import src
 ```
 
-清单采用 JSON 表示，也是有效的 YAML。恢复需要能够访问上游地址，且上游仍提供对应提交。此步骤恢复源码，不负责安装构建依赖或完成编译；具体环境与实验记录会随章节补充。
-
-章节中的源码链接指向恢复后的本地 `src/`，在 GitHub 网页上直接点击这些链接不会显示上游源码。建议克隆并恢复源码后使用本地 Markdown 阅读器。
+以上命令仅获取源码，依赖安装与编译按官方指南继续完成。章节中的源码链接指向本地 `src/`，建议获取源码后使用本地 Markdown 阅读器。
 
 ## 项目组织
 
