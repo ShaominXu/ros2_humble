@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(lifetime_probe LANGUAGES CXX)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+add_executable(lifetime_probe main.cpp)
+target_compile_features(lifetime_probe PRIVATE cxx_std_14)
+ament_target_dependencies(lifetime_probe rclcpp std_msgs)

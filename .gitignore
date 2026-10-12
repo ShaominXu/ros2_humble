@@ -2,5 +2,6 @@
 /build/
 /install/
 /log/
+/experiment-results/
 __pycache__/
 *.pyc

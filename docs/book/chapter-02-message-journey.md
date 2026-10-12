@@ -247,6 +247,8 @@ sequenceDiagram
 
 ## 2.9 用三个实验检验理解
 
+完整的准备命令、GDB 操作、预期输出、结果判读及实测记录表见[实验操作与结果记录](experiment-guide.md)。可先使用 apt 安装环境验证一般行为；核对本书具体实现时使用固定源码版本。
+
 以下实验尚未执行。前提是已经构建并加载包含上述源码的 ROS 环境；若使用其他安装环境，观察结果只能验证那个环境的行为。两个终端需要使用相同的 ROS domain，并具有可兼容的发现与通信配置。
 
 ### 实验一：建立基本通信
@@ -270,22 +272,22 @@ ros2 topic info /chatter --verbose
 
 ### 实验二：暂停 Listener 的执行器
 
-使用调试器在 Listener 的 `exec.spin()` 前暂停，保持 Talker 运行，然后继续执行 Listener。
+使用调试器在 Listener 的 `SingleThreadedExecutor::spin()` 函数入口暂停，保持 Talker 独立运行，然后继续执行 Listener。具体断点设置见实验指南；完整 Debug 构建不是函数入口断点的必需条件，能否设置取决于实际符号。
 
 预期在 Listener 暂停期间，它的用户订阅回调不会运行，因为执行器尚未进入调度循环。恢复后是否还能取出暂停期间的消息、能取出多少，取决于发现时机、历史缓存和其他配置；需要记录实际结果。
 
-这个实验检验的是应用回调对执行器的依赖。它不表示暂停期间底层通信线程一定停止工作。
+默认 GDB all-stop 会暂停 Listener 的全部线程，包括中间件线程。因此，该方式只能观察暂停与恢复行为，不能独立证明“底层持续接收、只有执行器暂停”。若使用目标支持的 non-stop 模式，需要另行记录其他线程是否运行；线程运行也不能单独证明样本已被接收。
 
 ### 实验三：沿调用栈确认发布与接收
 
 在具有调试符号的构建中设置断点：
 
-| 进程 | 建议断点 | 观察目标 |
-| --- | --- | --- |
-| Talker | `rcl_publish` | 确认定时器回调经发布接口进入 C 层 |
-| Talker | `rmw_fastrtps_shared_cpp::__rmw_publish` | 仅在选用对应 RMW 时观察 DDS 写入入口 |
-| Listener | `rcl_take` | 确认由执行器发起消息取出 |
-| Listener | `Subscription::handle_message` 或用户 lambda | 对照成功取出后的回调调用栈 |
+| 进程     | 建议断点                                       | 观察目标                             |
+| -------- | ---------------------------------------------- | ------------------------------------ |
+| Talker   | `rcl_publish`                                | 确认定时器回调经发布接口进入 C 层    |
+| Talker   | `rmw_fastrtps_shared_cpp::__rmw_publish`     | 仅在选用对应 RMW 时观察 DDS 写入入口 |
+| Listener | `rcl_take`                                   | 确认由执行器发起消息取出             |
+| Listener | `Subscription::handle_message` 或用户 lambda | 对照成功取出后的回调调用栈           |
 
 模板函数与优化构建可能让断点定位不直观，可按文件和语句位置设置。暂停进程会改变时序和缓存状态，这个实验用于验证调用关系，不用于测量性能。
 
@@ -301,13 +303,13 @@ ros2 topic info /chatter --verbose
 
 以上链接均指向当前工作区源码；分析没有以外部版本替换本地实现。代码块为必要节选，版权与许可证以原文件为准。
 
-| 主题 | 主要源码入口 |
-| --- | --- |
-| 示例和构建 | `demos/demo_nodes_cpp/src/topics/{talker,listener}.cpp`；`demo_nodes_cpp/CMakeLists.txt` |
-| 组件入口 | `rclcpp_components/src/node_main.cpp.in`；`cmake/rclcpp_components_register_node.cmake` |
-| 发布 | `rclcpp/include/rclcpp/publisher.hpp`；`rcl/src/rcl/publisher.c` |
-| Fast DDS 写入入口 | `rmw_fastrtps_cpp/src/rmw_publish.cpp`；`rmw_fastrtps_shared_cpp/src/rmw_publish.cpp` |
-| 调度与接收 | `rclcpp/src/rclcpp/executors/single_threaded_executor.cpp`；`executor.cpp`；`subscription_base.cpp` |
-| 取出与回调 | `rcl/src/rcl/subscription.c`；`rclcpp/include/rclcpp/subscription.hpp` |
+| 主题              | 主要源码入口                                                                                              |
+| ----------------- | --------------------------------------------------------------------------------------------------------- |
+| 示例和构建        | `demos/demo_nodes_cpp/src/topics/{talker,listener}.cpp`；`demo_nodes_cpp/CMakeLists.txt`              |
+| 组件入口          | `rclcpp_components/src/node_main.cpp.in`；`cmake/rclcpp_components_register_node.cmake`               |
+| 发布              | `rclcpp/include/rclcpp/publisher.hpp`；`rcl/src/rcl/publisher.c`                                      |
+| Fast DDS 写入入口 | `rmw_fastrtps_cpp/src/rmw_publish.cpp`；`rmw_fastrtps_shared_cpp/src/rmw_publish.cpp`                 |
+| 调度与接收        | `rclcpp/src/rclcpp/executors/single_threaded_executor.cpp`；`executor.cpp`；`subscription_base.cpp` |
+| 取出与回调        | `rcl/src/rcl/subscription.c`；`rclcpp/include/rclcpp/subscription.hpp`                                |
 
 上述路径相对于各自所属仓库或包，完整路径可通过正文链接定位。已核验示例配置、组件入口、普通发布与取出调用、执行器分支及回调分发；尚未运行实验，也未在本章展开 DDS 发现、序列化内部实现、借用消息和进程内通信。

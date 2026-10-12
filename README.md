@@ -11,6 +11,7 @@
 - [第 2 章：从 talker/listener 追踪一条消息](docs/book/chapter-02-message-journey.md)
 - [第 3 章：ROS 2 分层与资源生命周期](docs/book/chapter-03-layers-and-lifetime.md)
 - [章节模板](docs/book/chapter-template.md)
+- [第 2、3 章实验操作与结果记录](docs/book/experiment-guide.md)
 
 当前章节已按本地源码核验关键调用，构建与实验尚未验证。
 
