@@ -3,5 +3,7 @@
 /install/
 /log/
 /experiment-results/
+/video/**/assets/
+/video/**/output/
 __pycache__/
 *.pyc
