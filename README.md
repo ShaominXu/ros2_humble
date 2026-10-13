@@ -19,7 +19,6 @@
 - [第 10 章：进程内通信与消息所有权](docs/book/chapter-10-intra-process-ownership.md)
 - [第 11 章：借用消息与内存管理](docs/book/chapter-11-loaned-message-memory.md)
 - [章节模板](docs/book/chapter-template.md)
-- [第 2、3 章实验操作与结果记录](docs/book/experiment-guide.md)
 
 当前章节已按本地源码核验关键调用，构建与实验尚未验证。
 

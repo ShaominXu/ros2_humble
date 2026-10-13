@@ -98,7 +98,7 @@ callbacks_after_dispatch=1
 
 程序登记一个条件，另一个线程约两百毫秒后触发，主线程最多等待一秒。预期 `wait=Ready user_callbacks=0`。这里返回 Ready 是通知条件就绪，不是取出了订阅消息或执行了业务回调。
 
-三个命令正常退出为 0，异常为 2；程序只是打印观察状态，退出码不代替预期状态核对。保存日志时可使用 `2>&1 | tee experiment-results/waiting-timer.txt` 等不同文件名。完整环境记录方法见[实验指南](experiment-guide.md)。
+三个命令正常退出为 0，异常为 2；程序只是打印观察状态，退出码不代替预期状态核对。保存日志时可使用 `2>&1 | tee experiment-results/waiting-timer.txt` 等不同文件名。同时保存操作系统、编译器与 GDB 版本、rclcpp 安装前缀、RMW、源码提交及修改状态、构建命令和环境加载顺序；使用 apt 库时记录包版本。
 
 需要核对调用关系时，用 GDB 启动 timer 模式，在 `rcl_wait`、`rmw_wait` 和 `rcl_timer_call` 设置函数断点；每次命中记录 `bt` 并继续。暂停会改变定时器状态和到期时间，该实验不用于测量正常延迟。
 

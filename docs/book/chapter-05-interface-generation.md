@@ -196,7 +196,7 @@ source install/interfaces/setup.bash
 
 前提是具备 colcon、编译器、ament、rclcpp、默认接口生成器及所选 RMW。apt 缺包时先安装 `ros-humble-rosidl-default-generators`、`ros-humble-rclcpp` 和 `ros-humble-rmw-fastrtps-cpp` 等所需组件。
 
-这里仅构建实验目录中的包，使用当前已加载的工具与依赖。若要核验本书生成器版本，应先构建对应源码工具链，并用其安装环境作为基础；不能将 apt 生成文件自动视作本地模板的逐字输出。环境记录参见[实验指南](experiment-guide.md)。
+这里仅构建实验目录中的包，使用当前已加载的工具与依赖。若要核验本书生成器版本，应先构建对应源码工具链，并用其安装环境作为基础；不能将 apt 生成文件自动视作本地模板的逐字输出。记录操作系统、编译器、生成器和 ROS 包版本、安装前缀、RMW、domain、源码提交及修改状态、构建命令和环境加载顺序，并保存本次实际生成文件清单。
 
 ### 实验一：逐层查找生成文件
 

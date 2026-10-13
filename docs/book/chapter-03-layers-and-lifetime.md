@@ -204,25 +204,116 @@ std::vector<rclcpp::SubscriptionBase::WeakPtr> subscription_ptrs_;
 
 ## 3.9 两个生命周期实验
 
-可编译探针、完整构建命令、分阶段操作和预期输出见[实验操作与结果记录](experiment-guide.md)第五部分。以下保留实验目的和源码判读；实际结果需运行后填写。
+以下实验尚未执行，输出为源码推导的预期结果。
 
-以下步骤为待运行实验。探针可先链接 apt 安装的库观察行为；核对本书实现时使用对应源码构建，逐行跟踪时需要匹配的调试信息。断点观察用于验证调用关系，不用于测量延迟。
+### 环境准备与记录
 
-### 实验一：释放节点后，谁还持有 NodeBase
+以下以 Ubuntu、Bash 和 GDB 为例，从书稿仓库根目录执行。需要 CMake、编译器、rclcpp、std_msgs 开发文件及可用的 RMW。apt 安装环境可以观察其版本的行为；核对本书源码时，在基础环境后加载对应本地安装环境。
 
-在一个最小程序中先创建节点和发布者，把它们分别保存在两个变量里。随后释放最外层节点变量，暂时保留发布者，最后再释放发布者。
+```bash
+source /opt/ros/humble/setup.bash
+export ROS_DOMAIN_ID=42
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+mkdir -p experiment-results
+{
+  date -Is
+  uname -a
+  cat /etc/os-release
+  gdb --version | head -n 1
+  printenv ROS_DISTRO ROS_DOMAIN_ID RMW_IMPLEMENTATION
+  ros2 pkg prefix rclcpp
+  ros2 pkg prefix std_msgs
+  dpkg-query -W ros-humble-rclcpp ros-humble-std-msgs
+} > experiment-results/lifetime-environment.txt 2>&1
+```
 
-设置 `Node::~Node()`、`rcl_publisher_fini()` 与 `rcl_node_fini()` 断点，记录实际进入顺序，并检查是否存在其他节点接口或调度对象的强引用。源码给出的预期是：发布者所持有的别名共享句柄可以使 `NodeBase` 继续存活，因此最外层 Node 析构与底层节点清理不必发生在同一时刻。
+使用本地源码构建时另记录提交号、修改状态、构建命令和环境加载顺序。函数入口断点依赖可识别符号，不要求所有依赖都采用 Debug；源码行、变量和逐行跟踪需要匹配的调试信息。默认 GDB 会暂停该进程全部线程，不能从暂停下的调用时间推断正常性能。
 
-这个实验不应注册捕获已销毁业务对象的回调，也不应据其结果推导“节点释放后所有操作都安全”。它只检验共享持有关系。
+### 构建生命周期探针
 
-### 实验二：关闭上下文与释放对象分开观察
+程序位于 [`experiments/lifetime/main.cpp`](../../experiments/lifetime/main.cpp)。它不创建执行器，也不注册捕获业务对象的回调；关闭参数服务、参数事件和 rosout，减少无关端点。每个阶段要求按 Enter 才继续，便于观察销毁边界。
 
-创建一个显式 Context，初始化后通过 NodeOptions 传给节点，再创建发布者。保持变量存活，调用该 Context 的 `shutdown()`；检查 `is_valid()`，然后依次释放发布者、节点及 Context。
+加载 apt 或本地安装环境后，从书稿仓库根目录构建：
 
-在 `rcl_shutdown()`、`rcl_publisher_fini()`、`rcl_node_fini()` 和 `rcl_context_fini()` 设置断点。预期可以观察到上下文关闭和对象资源清理是不同调用，最终清理时间受持有关系影响。若没有进入某个析构断点，应先检查仍存在的引用，而不是立即认定发生了泄漏。
+```bash
+cmake -S experiments/lifetime -B build/lifetime -DCMAKE_BUILD_TYPE=Debug
+cmake --build build/lifetime
+```
 
-实际调用顺序、返回值和运行条件需要补入实验记录；本稿尚未给出实测结论。
+这里仅编译探针，链接当前环境发现的 ROS 库。探针带调试信息不意味着依赖库自动带完整调试信息。可以先不用 GDB 验证输出；若观察函数清理边界，再使用 GDB。
+
+### 实验一：释放 Node，保留 Publisher
+
+执行：
+
+```bash
+./build/lifetime/lifetime_probe
+```
+
+按每个提示输入 Enter。A 阶段对象已创建；C 阶段最外层 Node 已释放，Publisher 保留；D 阶段 Publisher 已释放；最后退出 NodeOptions 作用域并释放 Context。
+
+**按本地源码推导的预期输出（非实测）**：
+
+```text
+A: objects created [press Enter]
+node_expired=1 base_expired=0
+C: outer Node released; publisher retained [press Enter]
+base_expired=1
+D: publisher released [press Enter]
+context_expired=1
+```
+
+`node_expired=1` 表示最外层 Node 不再存活，`base_expired=0` 表示发布者的共享句柄仍保持 NodeBase。最后释放 Publisher 后，若没有其他强引用，NodeBase 才释放。结果与预期不同，应记录实际输出并检查版本和持有关系。
+
+如需观察 C 层清理，运行 `gdb --args ./build/lifetime/lifetime_probe`，然后输入：
+
+```gdb
+set breakpoint pending on
+break rcl_publisher_fini
+break rcl_node_fini
+run
+```
+
+遇到程序的 Enter 提示时按 Enter；遇到 GDB 断点提示时输入 `bt`，保存栈，再输入 `continue`。预期相关清理集中在释放 Publisher 的步骤；不要假定不同配置下只有一次发布者清理。
+
+### 实验二：先关闭 Context，保留对象
+
+执行：
+
+```bash
+./build/lifetime/lifetime_probe shutdown
+```
+
+在 A 阶段按 Enter，程序调用显式 Context 的 shutdown；停在 B 阶段时，预期增加以下输出：
+
+```text
+context_valid=0 node_alive=1 publisher_alive=1
+B: context shutdown; objects retained [press Enter]
+```
+
+这说明上下文已无效，而程序仍持有 Node 和 Publisher 对象。后续按 Enter 释放对象，预期 C、D 和最终输出与实验一相同。`publisher_alive=1` 只表示共享指针非空，不表示端点此时可正常通信。
+
+进一步调试可使用 `gdb --args ./build/lifetime/lifetime_probe shutdown`，设置以下断点后运行：
+
+```gdb
+set breakpoint pending on
+break rcl_shutdown
+break rcl_publisher_fini
+break rcl_node_fini
+break rcl_context_fini
+run
+```
+
+每次命中记录函数、阶段和调用栈，再继续。预期 shutdown 先于端点和节点清理，上下文最终清理在依赖释放之后。本程序专门让 NodeOptions 先退出作用域，因为它也持有 Context，否则 `context.reset()` 不一定是最后一份强引用。
+
+### 实测结果记录
+
+运行完成后填入实际观察与日志位置。在执行前保持“待执行”，不得将预期结果改称实测。
+
+| 实验 | 状态 | 实际观察 | 证据位置 | 结论与限制 |
+| --- | --- | --- | --- | --- |
+| 3-1 共享持有 | 待执行 | 弱引用状态、fini 阶段 | 待填写 | 待填写 |
+| 3-2 关闭与清理 | 待执行 | 有效性、存活状态、清理顺序 | 待填写 | 待填写 |
 
 ## 3.10 本章小结
 

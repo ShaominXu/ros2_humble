@@ -168,7 +168,7 @@ cmake -S experiments/initialization -B build/initialization \
 cmake --build build/initialization
 ```
 
-前提是安装了 CMake、编译器、rclcpp 开发文件及所选 RMW。这里仅把探针构建为 Debug，不会为 apt 提供的依赖库自动补充完整调试信息。环境记录方法与符号要求见[实验指南](experiment-guide.md)。
+前提是安装了 CMake、编译器、rclcpp 开发文件及所选 RMW。这里仅把探针构建为 Debug，不会为 apt 提供的依赖库自动补充完整调试信息。实验记录应包含操作系统、工具版本、ROS 包前缀、RMW、domain、源码提交及修改状态、构建命令和环境加载顺序。函数入口断点依赖可识别符号，源码行和变量观察需匹配的调试信息；本章程序的 Debug 配置不会为依赖库自动补齐符号。
 
 ### 实验一：全局配置与节点隔离
 
