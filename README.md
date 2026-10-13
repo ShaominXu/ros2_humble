@@ -22,13 +22,16 @@
 
 当前章节已按本地源码核验关键调用，构建与实验尚未验证。
 
-## 安装环境
+## 从源码安装
 
-请参考 [ROS 2 Humble 官方安装指南](https://docs.ros.org/en/humble/Installation.html)，选择适合操作系统的安装方式。
+请按操作系统参考 ROS 2 Humble 官方源码构建指南，完成环境准备、依赖安装、编译和环境加载：
+
+- [Ubuntu 源码安装](https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html)
+- [Windows 源码安装](https://docs.ros.org/en/humble/Installation/Alternatives/Windows-Development-Setup.html)
 
 ## 本书对应的源码版本
 
-安装与构建请参考上面的官方指南。若需对照本书阅读源码，请使用 [sources.repos](sources.repos) 获取对应版本：清单固定了 104 个上游仓库的具体提交，避免上游更新后代码与书中分析不一致。`src/` 为本地阅读目录，不提交到本仓库。
+按官方源码构建指南准备环境时，使用本仓库的 [sources.repos](sources.repos) 获取源码，替代指南中的上游源码清单：本清单固定了 104 个上游仓库的具体提交，避免上游更新后代码与书中分析不一致。`src/` 为本地源码目录，不提交到本仓库。
 
 在安装 Git 和 vcstool 后，从仓库根目录执行：
 
@@ -44,7 +47,7 @@ New-Item -ItemType Directory -Force src
 Get-Content -Raw sources.repos | vcs import src
 ```
 
-以上命令仅获取源码，依赖安装与编译按官方指南继续完成。章节中的源码链接指向本地 `src/`，建议获取源码后使用本地 Markdown 阅读器。
+以上命令仅获取源码，依赖安装、编译与环境加载按对应系统的官方源码构建指南继续完成。章节中的源码链接指向本地 `src/`，建议获取源码后使用本地 Markdown 阅读器。
 
 ## 项目组织
 
