@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(waiting_probe LANGUAGES CXX)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+add_executable(waiting_probe main.cpp)
+target_compile_features(waiting_probe PRIVATE cxx_std_14)
+ament_target_dependencies(waiting_probe rclcpp)

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(scheduling_probe LANGUAGES CXX)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+add_executable(scheduling_probe main.cpp)
+target_compile_features(scheduling_probe PRIVATE cxx_std_14)
+ament_target_dependencies(scheduling_probe rclcpp)

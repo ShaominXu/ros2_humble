@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(qos_probe LANGUAGES CXX)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+add_executable(qos_probe main.cpp)
+target_compile_features(qos_probe PRIVATE cxx_std_14)
+ament_target_dependencies(qos_probe rclcpp std_msgs)
