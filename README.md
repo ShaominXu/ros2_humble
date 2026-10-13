@@ -10,6 +10,7 @@
 - [第 1 章：工作区、包与版本基线](docs/book/chapter-01-workspace-and-baseline.md)
 - [第 2 章：从 talker/listener 追踪一条消息](docs/book/chapter-02-message-journey.md)
 - [第 3 章：ROS 2 分层与资源生命周期](docs/book/chapter-03-layers-and-lifetime.md)
+- [第 4 章：初始化、Context 与 Node](docs/book/chapter-04-initialization-context-node.md)
 - [章节模板](docs/book/chapter-template.md)
 - [第 2、3 章实验操作与结果记录](docs/book/experiment-guide.md)
 
