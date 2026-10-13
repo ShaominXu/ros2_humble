@@ -53,4 +53,5 @@
 - 已完成[第 5 章试写稿：消息定义如何变成代码](chapter-05-interface-generation.md)，附接口生成与序列化往返实验包，编译运行待验证。
 - 已完成[第 6 章试写稿：Publisher 与 Subscription](chapter-06-publisher-subscription.md)，附端点、名称重映射与主动取出实验，编译运行待验证。
 - 已完成[第 7 章](chapter-07-qos-discovery.md)、[第 8 章](chapter-08-waitset-guard-timer.md)、[第 9 章](chapter-09-executor-callback-groups.md)试写稿，附 QoS、等待和并发探针，编译运行待验证。
-- 下一步：补充实验记录并继续第 10 章进程内通信与消息所有权。
+- 已完成[第 10 章](chapter-10-intra-process-ownership.md)、[第 11 章](chapter-11-loaned-message-memory.md)试写稿，附所有权与借用能力实验，编译运行待验证。
+- 下一步：补充实验记录并继续第 12 章 Service 与 Client。

@@ -16,6 +16,8 @@
 - [第 7 章：QoS 与通信发现](docs/book/chapter-07-qos-discovery.md)
 - [第 8 章：WaitSet、GuardCondition 与 Timer](docs/book/chapter-08-waitset-guard-timer.md)
 - [第 9 章：Executor 与 CallbackGroup](docs/book/chapter-09-executor-callback-groups.md)
+- [第 10 章：进程内通信与消息所有权](docs/book/chapter-10-intra-process-ownership.md)
+- [第 11 章：借用消息与内存管理](docs/book/chapter-11-loaned-message-memory.md)
 - [章节模板](docs/book/chapter-template.md)
 - [第 2、3 章实验操作与结果记录](docs/book/experiment-guide.md)
 

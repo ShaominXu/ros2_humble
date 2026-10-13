@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(loaning_probe LANGUAGES CXX)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+add_executable(loaning_probe main.cpp)
+target_compile_features(loaning_probe PRIVATE cxx_std_14)
+ament_target_dependencies(loaning_probe rclcpp std_msgs)
