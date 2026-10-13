@@ -4,7 +4,7 @@
 
 ## 阅读入口
 
-- [工作区整体解读](docs/project-overview.md)
+- [导读：源码全景与阅读路线](docs/book/introduction.md)
 - [写作项目与成书路线](docs/book/README.md)
 - [全书目录草案](docs/book/outline.md)
 - [第 1 章：工作区、包与版本基线](docs/book/chapter-01-workspace-and-baseline.md)
