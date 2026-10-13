@@ -12,6 +12,7 @@
 - [第 3 章：ROS 2 分层与资源生命周期](docs/book/chapter-03-layers-and-lifetime.md)
 - [第 4 章：初始化、Context 与 Node](docs/book/chapter-04-initialization-context-node.md)
 - [第 5 章：消息定义如何变成代码](docs/book/chapter-05-interface-generation.md)
+- [第 6 章：Publisher 与 Subscription](docs/book/chapter-06-publisher-subscription.md)
 - [章节模板](docs/book/chapter-template.md)
 - [第 2、3 章实验操作与结果记录](docs/book/experiment-guide.md)
 

@@ -51,4 +51,5 @@
 - 尚未验证构建环境。
 - 已完成[第 4 章试写稿：初始化、Context 与 Node](chapter-04-initialization-context-node.md)，附初始化探针与详细实验，编译运行待验证。
 - 已完成[第 5 章试写稿：消息定义如何变成代码](chapter-05-interface-generation.md)，附接口生成与序列化往返实验包，编译运行待验证。
-- 下一步：根据试写稿反馈调整深度和行文，补充实验记录，再推进第 6 章 Publisher 与 Subscription。
+- 已完成[第 6 章试写稿：Publisher 与 Subscription](chapter-06-publisher-subscription.md)，附端点、名称重映射与主动取出实验，编译运行待验证。
+- 下一步：根据试写稿反馈调整深度和行文，补充实验记录，再推进第 7 章 QoS 与通信发现。
