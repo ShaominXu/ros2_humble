@@ -2,26 +2,6 @@
 
 以 ROS 2 Humble 源码为基础，沿节点创建、消息通信和回调执行逐步解读框架，最终整理为可阅读、可复现的书稿。
 
-## 阅读入口
-
-- [导读：源码全景与阅读路线](docs/book/introduction.md)
-- [写作项目与成书路线](docs/book/README.md)
-- [全书目录草案](docs/book/outline.md)
-- [第 1 章：工作区、包与版本基线](docs/book/chapter-01-workspace-and-baseline.md)
-- [第 2 章：从 talker/listener 追踪一条消息](docs/book/chapter-02-message-journey.md)
-- [第 3 章：ROS 2 分层与资源生命周期](docs/book/chapter-03-layers-and-lifetime.md)
-- [第 4 章：初始化、Context 与 Node](docs/book/chapter-04-initialization-context-node.md)
-- [第 5 章：消息定义如何变成代码](docs/book/chapter-05-interface-generation.md)
-- [第 6 章：Publisher 与 Subscription](docs/book/chapter-06-publisher-subscription.md)
-- [第 7 章：QoS 与通信发现](docs/book/chapter-07-qos-discovery.md)
-- [第 8 章：WaitSet、GuardCondition 与 Timer](docs/book/chapter-08-waitset-guard-timer.md)
-- [第 9 章：Executor 与 CallbackGroup](docs/book/chapter-09-executor-callback-groups.md)
-- [第 10 章：进程内通信与消息所有权](docs/book/chapter-10-intra-process-ownership.md)
-- [第 11 章：借用消息与内存管理](docs/book/chapter-11-loaned-message-memory.md)
-- [章节模板](docs/book/chapter-template.md)
-
-当前章节已按本地源码核验关键调用，构建与实验尚未验证。
-
 ## 从源码安装
 
 请参考 [ROS 2 Humble 官方安装指南](https://docs.ros.org/en/humble/Installation.html)，选择对应操作系统的源码安装流程，完成环境准备、依赖安装、编译和环境加载。源码使用本仓库的版本，获取方法见下文。
@@ -45,14 +25,5 @@ Get-Content -Raw sources.repos | vcs import src
 ```
 
 以上命令仅获取本仓库指定版本的源码。获取完成后，继续按照官方安装指南中对应系统的源码安装流程，完成依赖安装、编译与环境加载。章节中的源码链接指向本地 `src/`，建议获取源码后使用本地 Markdown 阅读器。
-
-## 项目组织
-
-```text
-docs/                  工作区说明与书稿
-  book/                成书路线、目录、章节与模板
-sources.repos          上游源码地址和精确提交号
-src/                   本地源码，由版本清单恢复
-```
 
 引用的上游源码版权与许可证以对应项目原文件为准。
